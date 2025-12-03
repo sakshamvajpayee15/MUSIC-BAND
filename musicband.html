@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> One Direction </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: #222;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      background: #333;
+      padding: 8px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      border-bottom: 1px solid #555;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .tour-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .tour-table th,
+    .tour-table td {
+      border: 1px solid #555;
+      padding: 6px;
+      text-align: left;
+    }
+    .merch-item {
+      border: 1px solid #555;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+    }
+    .gallery-grid img,
+    .gallery-grid iframe,
+    .gallery-grid video {
+      width: 100%;
+      display: block;
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      padding: 10px;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>One Direction</h1>
+    <p>Official Website</p>
+  </header>
+
+  <!-- Simple Navigation -->
+  <nav>
+    <a href="#music">Music</a>
+    <a href="#tour">Tour Dates</a>
+    <a href="#merch">Merch</a>
+    <a href="#gallery">Gallery</a>
+  </nav>
+
+  <!-- Music Player Section -->
+  <section id="music">
+    <h2>Music Player</h2>
+    <p>Listen to our songs (replace the file names with your own MP3 files).</p>
+
+    <p><strong>Song 1 – City Lights</strong></p>
+    <audio controls>
+      <source src="city-lights.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p><strong>Song 2 – Night Drive</strong></p>
+    <audio controls>
+      <source src="night-drive.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Tour Dates Section -->
+  <section id="tour">
+    <h2>Tour Dates</h2>
+    <table class="tour-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>City</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jan 15, 2026</td>
+          <td>Mumbai</td>
+          <td>Royal Arena</td>
+        </tr>
+        <tr>
+          <td>Jan 22, 2026</td>
+          <td>Delhi</td>
+          <td>Indie House</td>
+        </tr>
+        <tr>
+          <td>Feb 05, 2026</td>
+          <td>Bangalore</td>
+          <td>Skyline Theatre</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Merch Section -->
+  <section id="merch">
+    <h2>Merchandise Store</h2>
+
+    <div class="merch-item">
+      <h3>Band T-Shirt</h3>
+      <p>Price: ₹999</p>
+      <p>Simple black t-shirt with band logo.</p>
+      <!-- You can turn this into a real link -->
+      <button>Buy Now</button>
+    </div>
+
+    <div class="merch-item">
+      <h3>Band Hoodie</h3>
+      <p>Price: ₹1,999</p>
+      <p>Warm hoodie for fans.</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="merch-item">
+      <h3>Poster</h3>
+      <p>Price: ₹499</p>
+      <p>High-quality A3 size poster.</p>
+      <button>Buy Now</button>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Photo & Video Gallery</h2>
+    <p>Replace these images and videos with your own files/links.</p>
+
+    <div class="gallery-grid">
+      <!-- Photo 1 -->
+      <div>
+        <img src="live1.jpg" alt="Band live on stage">
+        <p>Live Show</p>
+      </div>
+
+      <!-- Photo 2 -->
+      <div>
+        <img src="studio1.jpg" alt="Band in studio">
+        <p>Recording in Studio</p>
+      </div>
+
+      <!-- YouTube Video -->
+      <div>
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="Band Music Video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <p>Official Music Video</p>
+      </div>
+
+      <!-- Local Video -->
+      <div>
+        <video controls>
+          <source src="live-session.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Live Session</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Band Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
